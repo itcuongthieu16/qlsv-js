@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Quản lý sinh viên</title>
+  </head>
+  <body onload="hienThiDanhSachSinhVien()">
+    <div class="container">
+      <h1 class="ml3">Quản lý sinh viên</h1>
+      <div class="box">
+        <div class="box-left">
+          <div class="box-left-Search">
+            <input
+              id="inputTimKiem"
+              type="text"
+              placeholder="Từ khoá cần tìm..."
+            />
+            <button id="btnTimKiem">Tìm kiếm</button>
+          </div>
+          <div class="box-left-Input">
+            <div class="inputSV">
+              <label for="txtMaSV"
+                >Mã SV<span style="color: red">*</span>:</label
+              >
+              <input type="text" id="txtMaSV" required />
+            </div>
+            <div class="inputSV">
+              <label for="txtTenSV"
+                >Tên SV<span style="color: red">*</span>:</label
+              >
+              <input type="text" id="txtTenSV" required />
+            </div>
+            <div class="inputSV">
+              <label for="txtNgaySinh">Ngày sinh:</label>
+              <input type="date" id="txtNgaySinh" />
+            </div>
+            <!-- Bắt đầu -->
+            <div class="inputSV-Gender">
+              <label>Giới tính:</label>
+              <div class="radio-buttons">
+                <label
+                  ><input
+                    id="rdoNam"
+                    type="radio"
+                    name="gioitinh"
+                    value="Nam"
+                  />Nam</label
+                >
+                <label
+                  ><input
+                    id="rdoNu"
+                    type="radio"
+                    name="gioitinh"
+                    value="Nữ"
+                  />Nữ</label
+                >
+              </div>
+            </div>
+            <!-- Kết thúc -->
+            <div class="inputSV">
+              <label for="txtMaKhoa"
+                >Mã khoa<span style="color: red">*</span>:</label
+              >
+              <input id="txtMaKhoa" type="text" />
+            </div>
+            <div class="inputSV">
+              <label for="txtTenKhoa"
+                >Tên khoa<span style="color: red">*</span>:</label
+              >
+              <input id="txtTenKhoa" type="text" />
+            </div>
+          </div>
+          <div class="box-left-Submit">
+            <button onclick="themSinhVien()" id="btnThemMoi">Thêm mới</button>
+            <button id="btnCapNhat">Cập Nhật</button>
+            <button id="btnXoaCheckBox">Xoá</button>
+          </div>
+        </div>
+        <div class="box-right">
+          <table id="boxTable">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Mã SV</th>
+                <th>Tên sinh viên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+                <th>Mã khoa</th>
+                <th>Tên khoa</th>
+                <th>Chức năng</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody id="tbodySinhVien"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="./index.js"></script>
+</html>

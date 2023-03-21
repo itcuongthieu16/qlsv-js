@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  margin-top: 50px;
+}
+
+.box-left {
+  float: left;
+  width: 35%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+  text-align: center;
+  color: #3f7fbf;
+}
+
+.box-left-Search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#inputTimKiem {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#btnTimKiem {
+  background-color: #3f7fbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.inputSV {
+  margin-bottom: 20px;
+}
+
+.inputSV label {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.inputSV input[type="text"],
+.inputSV input[type="date"] {
+  width: 65%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inputSV-Gender {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.inputSV-Gender label {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.radio-buttons label {
+  margin-right: 20px;
+}
+
+.inputSV-Gender input[type="radio"] {
+  margin-right: 5px;
+}
+
+.box-left-Submit {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.box-left-Submit button {
+  background-color: #3f7fbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box-right {
+  float: right;
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.58);
+}
+
+#boxTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#boxTable th,
+#boxTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+#boxTable th {
+  background-color: #3f7fbf;
+  color: white;
+}
+
+#tbodySinhVien tr:hover {
+  background-color: #f5f5f5;
+}
+
+#btnSua,
+#btnXoa {
+  color: blue;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#btnSua:hover,
+#btnXoa:hover {
+  text-decoration: underline;
+}
+
+
